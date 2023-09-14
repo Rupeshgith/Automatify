@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatify</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <div class="cont">
+        <h1>Input Files:</h1>
+        <form action="/extracttextfromimage" method="post" enctype="multipart/form-data">
+            <label for="file">For image file:</label>
+            <input type="file" name="file" accept="image/*" required> 
+            <button style="position: relative; left:10px">Extract text from image</button>
+            <label for="file">For pdf's file:</label>
+            <input type="file" id="inpFile">
+            <button type="button" id="btnUpload" style="position: relative; left:19px">Extract text from pdf</button>
+        </form>
+    </div>
+   <!-- <div class="cont">
+        <label for="file">For pdf file:</label>
+        <input type="file" id="inpFile">
+        <button type="button" id="btnUpload">Upload</button>
+    </div>-->
+    
+
+    <div class="container">
+        <h1 >Translation of text:</h1>
+        <div class="wrapper">
+            <div class="input-text">
+                <textarea class="from-text"  placeholder="Enter text..">{{data}}</textarea>
+                <textarea class="to-text"  placeholder="Translation" readonly disabled></textarea>
+            </div>
+            <ul class="controls">
+                <li class="row from">
+                    <div class="icons">
+                        <i id="from" class="fas fa-volume-up"></i>
+                       <!-- <i id="from" class="fas fa-volume-up"></i>-->
+                        <i id="from" class="fas fa-copy"></i>
+                    </div>
+                    <select> </select>
+                </li>
+                <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+                <li class="row to">
+
+                    <select> </select>
+                    <div class="icons">
+                        <i id="to" class="fas fa-volume-up"></i>
+                        <i id="to" class="fas fa-copy"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="button-container">
+            <button class="translate">Translate Text</button>
+            <button class="btn record">
+                <p>Start Listening</p>
+            </button>
+            <button class="btn clear">Clear</button>
+        </div>
+    </div>
+    
+    <!-- IONICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="countries.js"></script>
+    <script src="script.js"></script>
+    <script src="speech.js"></script>
+    <script src="pdf.js"></script>
+    
+</body>
+</html>

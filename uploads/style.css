@@ -1,0 +1,146 @@
+body{
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #111568,#520471);
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+label{
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+}
+input{
+    font-size: 16px;
+    background: aliceblue;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+.cont{
+    background: white;
+    width: 690px;
+    border-radius: 7px;
+    padding: 20px 25px;
+    margin: 10px;
+}
+.container{
+    margin: 10px;
+    background: white;
+    border-radius: 7px;
+    padding: 20px 25px;
+}
+.wrapper{
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+.input-text{
+    display: flex;
+    border: 1px solid #bbb;
+}
+.input-text .to-text{
+    border-radius: 0px;
+    border-left: 1px solid #bbb;
+}
+.input-text textarea{
+    height: 360px;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 18px;
+    border-radius: 5px;
+    background: none;
+    padding: 10px 15px;
+}
+.controls, li, .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.controls{
+    list-style: none;
+    padding: 10px;
+}
+.controls .icons{
+    width: 38%;
+}
+
+.controls .icons i{
+    width: 50px;
+    color: #a5b4c3;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.controls .icons i:hover{
+    width: 50px;
+    color: #8a97a4;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.controls .row select{
+    border: none;
+    outline: none;
+    background-color: #dce7f2;
+    cursor: pointer;
+    padding: 5px 7px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 44%;
+}
+
+.controls .exchange{
+    font-size: 16px;
+    color: #bbb;
+    cursor: pointer;
+}
+
+.row.from .icons{
+    padding-right: 15px;
+    border-right: 1px solid #bbb;
+}
+
+.row.to .icons{
+    padding-left: 15px;
+    border-left: 1px solid #bbb;
+}
+ button{
+    padding: 12px 15px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 12px;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #111568,#520471);
+    height: 45px;
+}
+ button:hover{
+    background-color: #203cae;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.button-container{
+    display: flex;
+    padding-top: 18px;
+}
